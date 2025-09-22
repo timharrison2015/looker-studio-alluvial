@@ -1,0 +1,9 @@
+{
+"name": "my-alluvial-viz",
+"private": true,
+"type": "module",
+"scripts": {
+"start": "npx serve ."
+},
+"dependencies": {}
+}
