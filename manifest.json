@@ -1,0 +1,75 @@
+{
+"name": "Alluvial (Multi-step Sankey)",
+"logoUrl": "https://raw.githubusercontent.com/simple-icons/simple-icons/develop/icons/googledatastudio.svg",
+"organization": "Your Org",
+"description": "Alluvial / multi-step Sankey from sequential dimensions.",
+"devMode": true,
+"supportUrl": "https://example.com",
+"privacyPolicyUrl": "https://example.com/privacy",
+"termsOfServiceUrl": "https://example.com/terms",
+"resources": {
+"js": [
+"index.html"
+]
+},
+"data": {
+"tables": [
+{
+"id": "main",
+"label": "Alluvial Data",
+"components": [
+{
+"id": "step1",
+"label": "Step 1",
+"type": "DIMENSION",
+"required": true
+},
+{
+"id": "step2",
+"label": "Step 2",
+"type": "DIMENSION",
+"required": true
+},
+{
+"id": "step3",
+"label": "Step 3",
+"type": "DIMENSION",
+"required": false
+},
+{
+"id": "step4",
+"label": "Step 4",
+"type": "DIMENSION",
+"required": false
+},
+{
+"id": "step5",
+"label": "Step 5",
+"type": "DIMENSION",
+"required": false
+},
+{
+"id": "step6",
+"label": "Step 6",
+"type": "DIMENSION",
+"required": false
+},
+{
+"id": "value",
+"label": "Weight (Users/Sessions)",
+"type": "METRIC",
+"required": true
+}
+]
+}
+]
+},
+"style": {
+"elements": {
+"colorMode": {
+"id": "colorMode",
+"label": "Coloring",
+"type": "SELECT",
+"options": [
+{ "label": "By Step", "value": "step" },
+}
